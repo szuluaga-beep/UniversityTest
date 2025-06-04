@@ -10,11 +10,9 @@ namespace University.Models
         public required string Name { get; set; }
 
         [Required]
-        public required string Code { get; set; }
-
-        [Required]
         public int Credits { get; set; }
 
+        public ICollection<Enrollment>? Enrollments { get; set; }
 
     }
 }

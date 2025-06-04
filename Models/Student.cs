@@ -15,6 +15,8 @@ namespace University.Models
         [EmailAddress]
         public required string Email { get; set; }
 
+        public ICollection<Enrollment>? Enrollments { get; set; }
+
 
     }
 }
