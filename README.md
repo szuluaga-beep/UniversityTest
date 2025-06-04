@@ -17,7 +17,7 @@ Navega hasta el directorio raíz del proyecto (donde está el archivo .csproj) y
 
 Bash
 
-dotnet restore
+`dotnet restore`
 Esto descargará todas las dependencias NuGet que el proyecto necesita.
 
 3. Configurar la Base de Datos SQLite
@@ -27,12 +27,12 @@ Para aplicar las migraciones y crear o actualizar la base de datos, ejecuta desd
 
 Bash
 
-dotnet ef database update
+`dotnet ef database update`
 Si necesitas crear una nueva migración, puedes usar:
 
 Bash
 
-dotnet ef migrations add NombreDeTuMigracion
+`dotnet ef migrations add NombreDeTuMigracion`
 Luego de crearla, ¡no olvides ejecutar dotnet ef database update para aplicarla!
 
 Ejecutar la Aplicación
@@ -43,7 +43,7 @@ Desde el directorio raíz del proyecto, ejecuta:
 
 Bash
 
-dotnet run
+`dotnet run`
 Esto iniciará la aplicación y te dará una URL (normalmente http://localhost:5000 o https://localhost:5001) para acceder a ella en tu navegador.
 
 Desde Visual Studio
@@ -54,3 +54,8 @@ Abre la carpeta del proyecto en Visual Studio Code.
 Ve a la pestaña "Run and Debug" (Ctrl+Shift+D).
 Selecciona el perfil de lanzamiento ".NET Core Launch (web)" y haz clic en el botón de inicio (flecha verde).
 ¡Eso es todo! Con estos pasos, deberías tener la aplicación .NET Core MVC funcionando con SQLite. Si tienes alguna duda o problema, no dudes en crear una issue en este repositorio.
+
+![diagram](https://github.com/user-attachments/assets/55c1b4e4-e5b6-4fa7-bbb5-359cba8830bd)
+
+
+
